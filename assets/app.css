@@ -1,0 +1,22 @@
+html, body {
+  background: #fff;
+  height: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.svg-wrapper {
+  height: 432px;
+  width: 432px;
+}
+
+.rotate {
+  animation-name: rotate;
+  animation-duration: 1s;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
