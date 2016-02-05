@@ -12,11 +12,13 @@ html, body {
 
 .rotate {
   animation-name: rotate;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
+  transform-origin: center;
 }
 
 @keyframes rotate {
-  100% {
-    transform: rotate(360deg);
-  }
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(-60deg) scale(1.4) translate(-15px, 30px); fill: #f06d06; left: 20px;}
+  100% { transform: rotate(0deg);  }
+
 }
